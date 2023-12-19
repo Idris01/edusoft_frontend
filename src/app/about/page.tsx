@@ -122,31 +122,6 @@ function About() {
         </div>)}
         
       </div>
-
-      <div className="contributors min-h-[10rem] flex flex-col justify-center w-full">
-      <h3 className="text-2xl text-center border-b-2">Contributors</h3>
-        <div className="flex flex-row gap-4 justify-center gap-4 flex-wrap">
-        {contributors.map(({name, role, picture, social})=><div key={role} className="flex gap-4 mt-4 border rounded p-1">
-            <div className="contributor-img">
-                    <Image src={picture} width={50} height={50} alt="" priority/>
-            </div>
-            <div>
-              <h3>Role: <span className="text-lg">{role}</span></h3>
-              <div className="flex flex-row gap-4">
-                {social.map(({url, icon})=><div key={url}>
-                <Link href={url}>
-                  <Image src={icon} width={20} height={20} alt="" />
-                </Link>
-                
-              </div>)}
-              </div>
- 
-            </div>
-
-          </div>
-        )}
-        </div>
-      </div>
     </div>
       
      
